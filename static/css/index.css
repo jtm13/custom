@@ -1,4 +1,4 @@
-div.card {
+.card {
     padding: 0.2rem;
     margin: 0.5rem;
     background-color: #f3f3f3;
@@ -18,8 +18,27 @@ main {
     justify-content: center;
     flex-wrap: wrap;
     background-color: white;
+    width: 75%;
 }
 
-div.card > img {
+#pane {
+    width: 25%;
+}
+
+#flex-div {
+    display: flex;
+    justify-content: center;
+}
+
+
+.card > img {
     border-radius: 50%;
+}
+
+.sec-2 {
+    display: flex;
+}
+
+.data {
+    /*display: inline-block;*/
 }

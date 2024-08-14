@@ -8,8 +8,24 @@
         <header>
             <h1>My Custom Project</h1>
         </header>
-        <main></main>
-        <section id="pane"></section>
+        <div id="flex-div">
+            <main></main>
+            <section id="pane">
+                <img id="picture"/>
+                <div class="sec-2">
+                    <span><b>Name:</b></span><p id="name" class="data"></p>
+                    <span><b>Age:</b></span><p id="age" class="data"></p>
+                </div>
+                <div class="sec-2">
+                    <span><b>Cell:</b></span><p id="cell" class="data"></p>
+                    <span><b>Email:</b></span><p id="email" class="data"></p>
+                </div>
+                <div class="sec-2">
+                    <span><b>Location:</b></span><p id="location" class="data"></p>
+                    <span><b>Gender:</b></span><p id="gender" class="data"></p>
+                </div>
+            </section>
+        </div>
         <footer>
             <button onclick="fetchPeople()">More people</button>
         </footer>

@@ -25,6 +25,7 @@ function fetchPeople(numberOfPeople = 10) {
                     divNode.setAttribute("location", `${user.location.city}, ${user.location.state}, ${user.location.country}`);
                     divNode.id = `${user.id.name}_${user.id.value}`;
                     divNode.setAttribute("picture", user.picture.large);
+                    divNode.addEventListener("click", (all) => changePane(divNode.id));
                     mainSection.appendChild(divNode);
                 });
             }, () => {});
@@ -32,6 +33,15 @@ function fetchPeople(numberOfPeople = 10) {
 
         console.log(data);
     });
+}
+
+function changePane(id) {
+    const card = document.getElementById(id);
+    const pane = document.getElementById("pane");
+    const data = pane.getElementsByTagName("p");
+    for (element of data) {
+        element.innerText = card.getAttribute(element.id);
+    }
 }
 
 fetchPeople(10);
